@@ -1,7 +1,7 @@
 # golden-cinema-react
 A Frontend UI/UX project by React
 
-Featuring: 
+### Featuring: 
 * Stateful Components
 * Stateless Components
 * Props
