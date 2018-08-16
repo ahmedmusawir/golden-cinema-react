@@ -1,0 +1,12 @@
+.navbar {
+  #navbarSupportedContent {
+    // border: 1rem solid red;
+    .navbar-nav {
+      .nav-item {
+        &:hover {
+          background-color: $cg-secondary;
+        }
+      }
+    }
+  }
+}
