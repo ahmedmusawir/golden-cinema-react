@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Home = () => {
+const BuySuccess = () => {
   return (
     <div className="container">
       <div className="row container-body my-5 p-5">
-        <h1>Home Page</h1>
+        <h1>Buy Success Page</h1>
         <h4>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
           pariatur sequi sint aliquam ipsam neque unde dignissimos perferendis,
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default BuySuccess;

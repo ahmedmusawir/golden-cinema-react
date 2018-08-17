@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Home = () => {
-  return (
-    <div className="container">
-      <div className="row container-body my-5 p-5">
-        <h1>Home Page</h1>
+export class MovieMain extends Component {
+  render() {
+    return (
+      <section className="main-content d-block">
+        <h1>Movies Main Page</h1>
         <h4>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
           pariatur sequi sint aliquam ipsam neque unde dignissimos perferendis,
@@ -20,11 +20,9 @@ const Home = () => {
           deserunt adipisci iste inventore alias aliquid voluptas tempora
           temporibus iusto minima itaque.
         </p>
-      </div>
-      {/* end row */}
-    </div>
-    // end container
-  );
-};
+      </section>
+    );
+  }
+}
 
-export default Home;
+export default MovieMain;

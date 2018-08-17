@@ -26,6 +26,44 @@ dir {
   -webkit-padding-start: 0px !important;
 }
 
+.container-body {
+  background-color: slategray;
+  border-radius: 10px;
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: lighten($color: $cg-secondary, $amount: 40%);
+  }
+  p {
+    color: lighten($color: $cg-secondary, $amount: 55%);
+  }
+}
+
+#movie-main {
+  nav {
+    // border: 3px solid red;
+    .nav {
+      .active {
+        background-color: darken($color: $cg-primary, $amount: 25%);
+      }
+      .nav-item {
+        background-color: darken($color: $cg-primary, $amount: 10%);
+        border-radius: 10px;
+        margin-left: 0.3rem;
+        .nav-link {
+          color: white;
+        }
+        &:hover {
+          background-color: darken($color: $cg-primary, $amount: 25%);
+        }
+      }
+    }
+  }
+}
 .movie-list {
   .movie-item {
     box-shadow: 4px 4px 8px gray;

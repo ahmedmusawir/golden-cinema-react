@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <footer className="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <h5>The Footer - &copy; 2018</h5>
     </footer>
   );

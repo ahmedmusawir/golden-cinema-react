@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export class MovieAction extends Component {
+export class MovieComedy extends Component {
   render() {
     return (
       <div className="container">
         <div className="row container-body">
-          <h1>Movie Action Page</h1>
+          <h1>Movie Comedy</h1>
           <h4>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             pariatur sequi sint aliquam ipsam neque unde dignissimos
@@ -29,4 +29,4 @@ export class MovieAction extends Component {
   }
 }
 
-export default MovieAction;
+export default MovieComedy;
