@@ -215,7 +215,7 @@ export const MovieActionData = [
   }
 ];
 
-export const MovieDrama = [
+export const MovieDramaData = [
   {
     Title: 'Star Wars: The Force Awakens',
     Year: '2015',
@@ -431,7 +431,7 @@ export const MovieDrama = [
   }
 ];
 
-export const MovieComedy = [
+export const MovieComedyData = [
   {
     Title: 'Austin Powers: International Man of Mystery',
     Year: '1997',

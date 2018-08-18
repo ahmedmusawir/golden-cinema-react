@@ -18,6 +18,7 @@ export class MovieAction extends Component {
         />
       );
     });
+
     return (
       <div className="container movie-category-list-container">
         <div className="container-body animated fadeIn">

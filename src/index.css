@@ -6573,6 +6573,17 @@ a {
 
 /*=====  End of HEADER & FOOTER  ======*/
 /** THE BODY ===========================  */
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px !important; }
+
 .container {
   margin-bottom: 6.5rem; }
 
@@ -6622,6 +6633,16 @@ a {
     color: white; }
   #movie-main nav .nav .nav-item:hover {
     background-color: #384048; }
+
+.movie-category-list-container .list-box .list-item {
+  margin-bottom: 2rem;
+  list-style: none;
+  box-shadow: 3px 3px 8px black;
+  background-color: #434d57; }
+  .movie-category-list-container .list-box .list-item .poster-holder .poster {
+    padding-right: 5rem; }
+  .movie-category-list-container .list-box .list-item .text-content .content {
+    padding: 5rem; }
 
 .movie-list .movie-item {
   box-shadow: 4px 4px 8px gray;
