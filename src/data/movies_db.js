@@ -1,4 +1,4 @@
-export const MovieAction = [
+export const MovieActionData = [
   {
     Title: 'X-Men: Days of Future Past',
     Year: '2014',

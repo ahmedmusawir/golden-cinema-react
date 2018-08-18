@@ -4,7 +4,7 @@ export class MovieComedy extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row container-body">
+        <div className="row container-body animated fadeIn">
           <h1>Movie Comedy</h1>
           <h4>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import FeaturedMovieList from './FeaturedMovieList';
+import { MovieDramaData } from '../data/movies_db.js';
 
 export class MovieDrama extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row container-body">
+        <div className="row container-body animated fadeIn">
           <h1>Movie Drama Page</h1>
           <h4>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum

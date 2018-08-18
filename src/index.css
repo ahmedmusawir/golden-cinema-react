@@ -6573,16 +6573,8 @@ a {
 
 /*=====  End of HEADER & FOOTER  ======*/
 /** THE BODY ===========================  */
-ul,
-menu,
-dir {
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px !important; }
+.container {
+  margin-bottom: 6.5rem; }
 
 .container-body {
   background-color: slategray;
@@ -6596,6 +6588,29 @@ dir {
     color: #e4cfb0; }
   .container-body p {
     color: #f7f2e9; }
+
+@media (max-width: 450px) {
+  #home-main .hero-img {
+    margin-top: -2rem; } }
+#home-main .description {
+  padding: 2rem;
+  background-color: #434d57; }
+  #home-main .description img {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem; }
+  #home-main .description .badge {
+    font-size: 1.2rem;
+    text-shadow: 4px 4px 8px black; }
+  #home-main .description i.fa-star {
+    color: tomato;
+    text-shadow: 3px 3px 8px black;
+    font-size: 1.5rem; }
+  #home-main .description .btn {
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    box-shadow: 3px 3px 8px black; }
 
 #movie-main nav .nav .active {
   background-color: #384048; }

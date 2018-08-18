@@ -3,7 +3,7 @@ import React from 'react';
 const BuyNow = props => {
   return (
     <div className="container">
-      <div className="row container-body my-5 p-5">
+      <div className="row container-body my-5 p-5 animated fadeIn">
         <h1>Buy Now Page</h1>
         <h4>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum

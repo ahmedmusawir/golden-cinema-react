@@ -5,7 +5,10 @@ const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
-        <h4 className="pt-2">Golden Cinema</h4>
+        <h4 className="pt-2">
+          <i className="fa fa-film" aria-hidden="true" />
+          Golden Cinema
+        </h4>
       </Link>
       <button
         className="navbar-toggler"

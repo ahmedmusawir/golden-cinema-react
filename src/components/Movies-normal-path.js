@@ -1,34 +1,29 @@
 import React, { Component } from 'react';
-import { Route, NavLink, Redirect, Switch } from 'react-router-dom';
+import { Route, NavLink, Redirect } from 'react-router-dom';
 import Action from './MovieAction';
 import Drama from './MovieDrama';
 import Comedy from './MovieComedy';
 import MovieMain from './MovieMain';
-import NotFound404 from './NotFound404';
 
 export class Movies extends Component {
-  // console.log(this.props.match);
-
   render() {
-    const match = this.props.match;
-
     return (
       <div id="movie-main" className="container">
         <div className="row container-body my-5 p-5">
           <nav className="ml-auto">
             <ul className="nav nav-pills">
               <li className="nav-item">
-                <NavLink className="nav-link" to={`${match.url}/action`}>
+                <NavLink className="nav-link" to="/movies/action">
                   Action
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to={`${match.url}/drama`}>
+                <NavLink className="nav-link" to="/movies/drama">
                   Drama
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to={`${match.url}/comedy`}>
+                <NavLink className="nav-link" to="/movies/comedy">
                   Comedy
                 </NavLink>
               </li>
@@ -39,14 +34,11 @@ export class Movies extends Component {
           </nav>
 
           {/* Route declaration for the sub menus */}
-          <Switch>
-            <Route path={`${match.path}/action`} component={Action} />
-            <Route path={`${match.path}/drama`} component={Drama} />
-            <Route path={`${match.path}/comedy`} component={Comedy} />
-            <Route exact path="/movies" component={MovieMain} />
-
-            <Route component={NotFound404} />
-          </Switch>
+          {/* <Redirect to="/movies" /> */}
+          <Route exact path="/movies/action" component={Action} />
+          <Route exact path="/movies/drama" component={Drama} />
+          <Route exact path="/movies/comedy" component={Comedy} />
+          <Route exact path="/movies" component={MovieMain} />
 
           {/* Movies Main Page content */}
         </div>

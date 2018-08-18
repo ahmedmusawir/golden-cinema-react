@@ -4,7 +4,6 @@ import Action from './MovieAction';
 import Drama from './MovieDrama';
 import Comedy from './MovieComedy';
 import MovieMain from './MovieMain';
-import NotFound404 from './NotFound404';
 
 export class Movies extends Component {
   // console.log(this.props.match);
@@ -40,12 +39,15 @@ export class Movies extends Component {
 
           {/* Route declaration for the sub menus */}
           <Switch>
+            <Route
+              exact
+              path={match.path}
+              render={() => <Redirect to={`${match.path}/action`} />}
+            />
             <Route path={`${match.path}/action`} component={Action} />
             <Route path={`${match.path}/drama`} component={Drama} />
             <Route path={`${match.path}/comedy`} component={Comedy} />
-            <Route exact path="/movies" component={MovieMain} />
-
-            <Route component={NotFound404} />
+            <Route path={`${match.path}/movies`} component={MovieMain} />
           </Switch>
 
           {/* Movies Main Page content */}

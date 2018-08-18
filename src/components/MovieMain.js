@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class MovieMain extends Component {
   render() {
     return (
-      <section className="main-content d-block">
+      <section className="main-content d-block animated fadeIn animated fadeIn">
         <h1>Movies Main Page</h1>
         <h4>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
