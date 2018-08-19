@@ -11,7 +11,7 @@ export class MovieDrama extends Component {
           title={movie.Title}
           released={movie.Released}
           genre={movie.Genre}
-          actors={movie.Actors}
+          runtime={movie.Runtime}
           plot={movie.Plot}
           image={movie.Poster}
           imdbRating={movie.imdbRating}
@@ -22,7 +22,7 @@ export class MovieDrama extends Component {
     return (
       <div className="container movie-category-list-container">
         <div className="container-body animated fadeIn">
-          <h1>Featured Drama: </h1>
+          <h1 className="badge badge-danger">Featured Drama: </h1>
           <ul className="list-box">{dramaMovies}</ul>
         </div>
       </div>

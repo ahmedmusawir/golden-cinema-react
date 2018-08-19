@@ -7,14 +7,12 @@ import MovieMain from './MovieMain';
 import NotFound404 from './NotFound404';
 
 export class Movies extends Component {
-  // console.log(this.props.match);
-
   render() {
     const match = this.props.match;
 
     return (
       <div id="movie-main" className="container">
-        <div className="row container-body my-5 p-5">
+        <div className="row container-body my-5 p-xs-0 p-md-5">
           <nav className="ml-auto">
             <ul className="nav nav-pills">
               <li className="nav-item">

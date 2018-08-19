@@ -8,8 +8,18 @@ const FeaturedMovieList = props => {
       </figure>
       <article className="text-content">
         <div className="content">
-          <h2>{props.title}</h2>
-          <p>{props.plot}</p>
+          <h2 className="title">{props.title}</h2>
+          <h5 className="genre">{props.genre}</h5>
+          <h5 className="badge badge-primary">{props.runtime}</h5>
+          <p className="plot">{props.plot}</p>
+          <div className="btn-holder">
+            <a className="btn btn-warning float-left" href="#">
+              {props.imdbRating}
+            </a>
+            <a className="btn btn-danger float-right" href="#">
+              Buy Now
+            </a>
+          </div>
         </div>
       </article>
     </li>

@@ -11,7 +11,7 @@ export class MovieDrama extends Component {
           title={movie.Title}
           released={movie.Released}
           genre={movie.Genre}
-          actors={movie.Actors}
+          runtime={movie.Runtime}
           plot={movie.Plot}
           image={movie.Poster}
           imdbRating={movie.imdbRating}
