@@ -23,7 +23,7 @@ const Nav = () => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav my-0 mx-auto">
+        <ul className="navbar-nav my-0 ml-auto">
           <li className="nav-item">
             <NavLink exact to="/" className="nav-link" href="#">
               Home <span className="sr-only">(current)</span>
@@ -45,7 +45,7 @@ const Nav = () => {
             </NavLink>
           </li>
         </ul>
-        <form className="form-inline my-2 my-lg-0">
+        {/* <form className="form-inline my-2 my-lg-0">
           <input
             className="form-control mr-sm-2"
             type="search"
@@ -58,7 +58,7 @@ const Nav = () => {
           >
             Search
           </button>
-        </form>
+        </form> */}
       </div>
     </nav>
   );

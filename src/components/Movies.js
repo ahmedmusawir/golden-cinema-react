@@ -4,6 +4,7 @@ import Action from './MovieAction';
 import Drama from './MovieDrama';
 import Comedy from './MovieComedy';
 import MovieMain from './MovieMain';
+import MovieSingle from './_movie-search/MovieSingle';
 import NotFound404 from './NotFound404';
 
 export class Movies extends Component {
@@ -12,7 +13,7 @@ export class Movies extends Component {
 
     return (
       <div id="movie-main" className="container">
-        <div className="row container-body my-5 p-xs-0 p-md-5">
+        <div className="row container-body my-sm-2 p-xs-0 p-md-5">
           <nav className="ml-auto">
             <ul className="nav nav-pills">
               <li className="nav-item">
@@ -42,6 +43,7 @@ export class Movies extends Component {
             <Route path={`${match.path}/drama`} component={Drama} />
             <Route path={`${match.path}/comedy`} component={Comedy} />
             <Route exact path="/movies" component={MovieMain} />
+            <Route path="/movies/single/:id" component={MovieSingle} />
 
             <Route component={NotFound404} />
           </Switch>

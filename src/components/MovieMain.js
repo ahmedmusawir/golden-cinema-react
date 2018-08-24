@@ -7,16 +7,16 @@ export class MovieMain extends Component {
     return (
       <section
         id="movie-main-search-list"
-        className="main-content animated fadeIn animated fadeIn"
+        className="main-content animated fadeIn animated fadeIn container"
       >
         <div className="form-holder">
           <article className="search-form">
             <SearchForm />
           </article>
         </div>
-        <article className="row movie-list">
+        <ul className="row movie-list">
           <MovieList />
-        </article>
+        </ul>
       </section>
     );
   }

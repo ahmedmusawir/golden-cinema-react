@@ -6633,10 +6633,37 @@ dir {
     color: white; }
   #movie-main nav .nav .nav-item:hover {
     background-color: #384048; }
+@media (max-width: 450px) {
+  #movie-main nav {
+    margin: 0 auto !important; } }
 #movie-main #movie-main-search-list .form-holder {
   background-color: #384048; }
   #movie-main #movie-main-search-list .form-holder .search-form {
     padding: 1rem 1rem; }
+#movie-main #movie-main-search-list .movie-list {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #384048; }
+  #movie-main #movie-main-search-list .movie-list .movie-item {
+    list-style: none; }
+    @media (max-width: 575px) {
+      #movie-main #movie-main-search-list .movie-list .movie-item {
+        text-align: center; }
+        #movie-main #movie-main-search-list .movie-list .movie-item .badge {
+          float: none !important; } }
+    #movie-main #movie-main-search-list .movie-list .movie-item img {
+      box-shadow: 5px 5px 10px black; }
+    #movie-main #movie-main-search-list .movie-list .movie-item .text-box {
+      margin-top: 1rem; }
+      #movie-main #movie-main-search-list .movie-list .movie-item .text-box .movie-title {
+        font-weight: 300;
+        text-shadow: 5px 5px 6px black; }
+      #movie-main #movie-main-search-list .movie-list .movie-item .text-box .badge {
+        margin-bottom: 1rem; }
+      #movie-main #movie-main-search-list .movie-list .movie-item .text-box .badge-dark {
+        background-color: #22272c;
+        padding: 0.5rem; }
 
 .movie-category-list-container .container-body .badge {
   font-size: 1.2rem;
