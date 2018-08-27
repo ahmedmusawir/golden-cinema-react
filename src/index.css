@@ -6657,8 +6657,10 @@ dir {
     #movie-main #movie-main-search-list .movie-list .movie-item .text-box {
       margin-top: 1rem; }
       #movie-main #movie-main-search-list .movie-list .movie-item .text-box .movie-title {
+        font-size: 1rem;
         font-weight: 300;
-        text-shadow: 5px 5px 6px black; }
+        text-shadow: 5px 5px 6px black;
+        min-height: 70px; }
       #movie-main #movie-main-search-list .movie-list .movie-item .text-box .badge {
         margin-bottom: 1rem; }
       #movie-main #movie-main-search-list .movie-list .movie-item .text-box .badge-dark {
@@ -6700,6 +6702,40 @@ dir {
       padding: 0.5rem 2rem;
       border-radius: 50px; }
     .movie-category-list-container .container-body .list-box .list-item .text-content .content .btn-holder .btn-warning {
+      padding: 0.8rem 1rem; }
+
+.single-movie-item {
+  margin-bottom: 2rem;
+  list-style: none;
+  box-shadow: 3px 3px 8px black;
+  background-color: #434d57; }
+  .single-movie-item .poster-holder .poster {
+    padding-right: 5rem; }
+    @media (max-width: 992px) {
+      .single-movie-item .poster-holder .poster {
+        float: none !important;
+        padding-right: 0;
+        margin-bottom: -3rem;
+        margin-top: 3rem;
+        box-shadow: 5px 5px 16px black; } }
+  .single-movie-item .text-content .content {
+    padding: 4rem; }
+    @media (max-width: 450px) {
+      .single-movie-item .text-content .content {
+        padding: 2.5rem; } }
+    .single-movie-item .text-content .content .title {
+      font-size: 1.5rem;
+      text-shadow: 3px 3px 8px black; }
+      @media (max-width: 450px) {
+        .single-movie-item .text-content .content .title {
+          padding-top: 1.5rem; } }
+    .single-movie-item .text-content .content .genre {
+      font-weight: 300; }
+    .single-movie-item .text-content .content .btn-holder .btn {
+      box-shadow: 3px 3px 8px black;
+      padding: 0.5rem 2rem;
+      border-radius: 50px; }
+    .single-movie-item .text-content .content .btn-holder .btn-warning {
       padding: 0.8rem 1rem; }
 
 /*# sourceMappingURL=index.css.map */

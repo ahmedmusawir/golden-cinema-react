@@ -1,31 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
+import MovieSingleItem from './MovieSingleItem';
+import axios from 'axios';
 
-const MovieSingle = props => {
-  console.log(props);
-  return (
-    <div className="container">
-      <div className="row container-body my-5 p-5 animated fadeIn">
-        <h1>Movie Single Page: {props.match.params.id}</h1>
-        <h4>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-          pariatur sequi sint aliquam ipsam neque unde dignissimos perferendis,
-          eveniet cupiditate! Aliquid eligendi quasi id consequuntur. Culpa ad
-          aliquam esse sunt.
-        </h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nisi
-          cum minus dolorum illum? Voluptates illo ullam, alias eveniet sit
-          eligendi excepturi debitis eos porro maiores. Autem dolorum amet
-          praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Est illum sed repudiandae laborum fuga quidem totam libero vitae,
-          deserunt adipisci iste inventore alias aliquid voluptas tempora
-          temporibus iusto minima itaque.
-        </p>
-      </div>
-      {/* end row */}
-    </div>
-    // end container
-  );
-};
+export class MovieSingle extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      movie: {}
+    };
+  }
+  componentDidMount() {
+    const id = this.props.match.params.id;
+    axios
+      .get(`http://www.omdbapi.com/?apikey=ea71a8f&i=${id}`)
+      .then(response => {
+        // console.log(response.data);
+        this.setState({ movie: response.data });
+      })
+      .catch(error => {
+        console.log('Error fetching and parsing data', error);
+      });
+  }
+  render() {
+    const { movie } = this.state;
+    return (
+      <MovieSingleItem
+        title={movie.Title}
+        released={movie.Released}
+        genre={movie.Genre}
+        runtime={movie.Runtime}
+        plot={movie.Plot}
+        image={movie.Poster}
+        imdbRating={movie.imdbRating}
+      />
+    );
+
+    return <ul className="list-box">{movie}</ul>;
+  }
+}
 
 export default MovieSingle;
