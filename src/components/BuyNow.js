@@ -1,30 +1,97 @@
-import React from 'react';
+import React, { Component } from 'react';
+import InputGroup from './InputGroup';
 
-const BuyNow = props => {
-  return (
-    <div className="container">
-      <div className="row container-body my-5 p-5 animated fadeIn">
-        <h1>Buy Now Page</h1>
-        <h4>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-          pariatur sequi sint aliquam ipsam neque unde dignissimos perferendis,
-          eveniet cupiditate! Aliquid eligendi quasi id consequuntur. Culpa ad
-          aliquam esse sunt.
-        </h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nisi
-          cum minus dolorum illum? Voluptates illo ullam, alias eveniet sit
-          eligendi excepturi debitis eos porro maiores. Autem dolorum amet
-          praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Est illum sed repudiandae laborum fuga quidem totam libero vitae,
-          deserunt adipisci iste inventore alias aliquid voluptas tempora
-          temporibus iusto minima itaque.
-        </p>
+class BuyNow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      address: '',
+      email: '',
+      card: '',
+      cvv: '',
+      errors: {}
+    };
+  }
+  // console.log(movie);
+  onSubmit = e => {
+    e.preventDefault();
+    console.log('form submitted');
+    console.log(this.state);
+  };
+  onChange = e => {
+    e.preventDefault();
+    // console.log(e.target.value);
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  render() {
+    const { movie, poster } = this.props.location.state;
+    const { name, address, email, card, cvv, errors } = this.state;
+
+    return (
+      <div className="container buy-now-page">
+        <div className="row container-body my-5 p-5 animated fadeIn">
+          <div className="col-md-4">
+            <img className="img-fluid" src={poster} alt="" />
+          </div>
+          <div className="col-md-8">
+            <h3 className="buy-title">
+              {movie}
+              <span className="badge badge-secondary float-right">$9.99</span>
+            </h3>
+            <form onSubmit={this.onSubmit} className="mt-5">
+              <InputGroup
+                name="name"
+                type="name"
+                placeholder="Enter Name"
+                value={email}
+                onChange={this.onChange}
+                error={errors.name}
+              />
+              <InputGroup
+                name="address"
+                type="address"
+                placeholder="Enter Address"
+                value={email}
+                onChange={this.onChange}
+                error={errors.address}
+              />
+              <InputGroup
+                name="email"
+                type="email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={this.onChange}
+                error={errors.email}
+              />
+              <InputGroup
+                name="email"
+                type="email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={this.onChange}
+                error={errors.email}
+              />
+              <InputGroup
+                name="email"
+                type="email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={this.onChange}
+                error={errors.email}
+              />
+              <button type="submit" className="btn btn-secondary btn-block">
+                Process Card
+              </button>
+            </form>
+          </div>
+        </div>
+        {/* end row */}
       </div>
-      {/* end row */}
-    </div>
-    // end container
-  );
-};
+      // end container
+    );
+  }
+}
 
 export default BuyNow;

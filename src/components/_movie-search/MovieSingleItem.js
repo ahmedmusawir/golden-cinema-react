@@ -5,10 +5,11 @@ const MovieSingleItem = props => {
   return (
     <div className="movie-page">
       <Link to="/movies" className="text-light">
-        <i class="fa fa-arrow-circle-left" aria-hidden="true" /> Back To Search
+        <i className="fa fa-arrow-circle-left" aria-hidden="true" /> Back To
+        Search
       </Link>
       <li className="single-movie-item clearfix">
-        <figure className="poster-holder text-center">
+        <figure className="poster-holder text-center animated slideInLeft">
           <img
             className="img-fluid poster float-left"
             src={props.image}
@@ -25,9 +26,15 @@ const MovieSingleItem = props => {
               <a className="btn btn-warning float-left" href="#">
                 {props.imdbRating}
               </a>
-              <a className="btn btn-danger float-right" href="#">
+              <Link
+                className="btn btn-danger float-right"
+                to={{
+                  pathname: '/buy-now',
+                  state: { movie: props.title, poster: props.image }
+                }}
+              >
                 Buy Now
-              </a>
+              </Link>
             </div>
           </div>
         </article>

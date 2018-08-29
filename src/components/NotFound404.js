@@ -7,7 +7,7 @@ const NotFound404 = () => {
         className="fa fa-exclamation-circle fa-5x mt-5 pt-5 text-danger"
         aria-hidden="true"
       />
-      <h1>Page Not Found</h1>
+      <h2>Nothing Found! Please Try Again ...</h2>
     </div>
   );
 };

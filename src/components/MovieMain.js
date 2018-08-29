@@ -15,15 +15,22 @@ export class MovieMain extends Component {
     this.performSearch();
   }
 
-  performSearch = (query = 'redemption') => {
+  performSearch = (query = 'men') => {
     axios
       .get(`http://www.omdbapi.com/?apikey=ea71a8f&s=${query}`)
       .then(response => {
-        // console.log(response.data.Search);
-        this.setState({
-          movies: response.data.Search,
-          loading: false
-        });
+        // console.log(response.data);
+        if (response.data.Response === 'True') {
+          this.setState({
+            movies: response.data.Search,
+            loading: false
+          });
+        } else {
+          this.setState({
+            movies: '',
+            loading: false
+          });
+        }
       })
       .catch(error => {
         console.log('Error fetching and parsing data', error);
@@ -32,10 +39,7 @@ export class MovieMain extends Component {
   };
   render() {
     return (
-      <section
-        id="movie-main-search-list"
-        className="main-content animated fadeIn animated fadeIn container"
-      >
+      <section id="movie-main-search-list" className="main-content container">
         <div className="form-holder">
           <article className="search-form">
             <SearchForm onSearch={this.performSearch} />

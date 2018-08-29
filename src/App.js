@@ -26,6 +26,7 @@ class App extends Component {
                 path="/buynow"
                 render={() => <BuyNow title="ShawShank Redemption" />}
               />
+              <Route path="/buy-now" component={BuyNow} />
               <Route path="/buysuccess" component={BuySuccess} />
               <Route component={NotFound404} />
             </Switch>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import MovieSingleItem from './MovieSingleItem';
 import axios from 'axios';
+import Spinner from '../Spinner';
 
-export class MovieSingle extends Component {
+class MovieSingle extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,19 +24,22 @@ export class MovieSingle extends Component {
   }
   render() {
     const { movie } = this.state;
-    return (
-      <MovieSingleItem
-        title={movie.Title}
-        released={movie.Released}
-        genre={movie.Genre}
-        runtime={movie.Runtime}
-        plot={movie.Plot}
-        image={movie.Poster}
-        imdbRating={movie.imdbRating}
-      />
-    );
 
-    return <ul className="list-box">{movie}</ul>;
+    if (movie) {
+      return (
+        <MovieSingleItem
+          title={movie.Title}
+          released={movie.Released}
+          genre={movie.Genre}
+          runtime={movie.Runtime}
+          plot={movie.Plot}
+          image={movie.Poster}
+          imdbRating={movie.imdbRating}
+        />
+      );
+    } else {
+      return <Spinner />;
+    }
   }
 }
 
