@@ -6573,6 +6573,9 @@ a {
 
 /*=====  End of HEADER & FOOTER  ======*/
 /** THE BODY ===========================  */
+.invalid-feedback {
+  color: yellow; }
+
 ul,
 menu,
 dir {
@@ -6737,5 +6740,82 @@ dir {
       border-radius: 50px; }
     .single-movie-item .text-content .content .btn-holder .btn-warning {
       padding: 0.8rem 1rem; }
+
+.blog-page {
+  /* Tool Colors */ }
+  .blog-page .container {
+    width: 98%; }
+  .blog-page .logo {
+    border-radius: 50%; }
+  .blog-page .text-muted a {
+    color: #989898; }
+  .blog-page .text-muted a:hover {
+    color: grey; }
+  .blog-page .fa a:active,
+  .blog-page a:hover,
+  .blog-page a:visited {
+    text-decoration: none; }
+  .blog-page .general {
+    background-color: #0095af; }
+  .blog-page .general .card-title {
+    color: #f3f3f3; }
+  .blog-page .general .card-text {
+    color: #f3f3f3; }
+  .blog-page .card-img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .blog-page .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: #008cba; }
+  .blog-page .card-pin:hover .overlay {
+    opacity: 0.5;
+    border: 5px solid #f3f3f3;
+    transition: ease 0.5s;
+    background-color: #000000;
+    cursor: zoom-in; }
+  .blog-page .more {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    transform: translate(-20%, -20%);
+    -ms-transform: translate(-50%, -50%); }
+  .blog-page .download {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    text-transform: uppercase;
+    transform: translate(-20%, -20%);
+    -ms-transform: translate(-50%, -50%); }
+  .blog-page .card-pin:hover .card-title {
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em; }
+  .blog-page .card-pin:hover .more a {
+    text-decoration: none;
+    color: #ffffff; }
+  .blog-page .card-pin:hover .download a {
+    text-decoration: none;
+    color: #ffffff; }
+  .blog-page .social {
+    position: relative;
+    transform: translateY(-50%); }
+  .blog-page .social .fa {
+    margin: 0 3px; }
 
 /*# sourceMappingURL=index.css.map */

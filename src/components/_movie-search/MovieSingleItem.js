@@ -23,9 +23,7 @@ const MovieSingleItem = props => {
             <h5 className="badge badge-primary">{props.runtime}</h5>
             <p className="plot">{props.plot}</p>
             <div className="btn-holder">
-              <a className="btn btn-warning float-left" href="#">
-                {props.imdbRating}
-              </a>
+              <a className="btn btn-warning float-left">{props.imdbRating}</a>
               <Link
                 className="btn btn-danger float-right"
                 to={{

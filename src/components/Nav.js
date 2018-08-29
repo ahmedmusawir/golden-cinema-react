@@ -7,7 +7,7 @@ const Nav = () => {
       <Link className="navbar-brand" to="/">
         <h4 className="pt-2">
           <i className="fa fa-film" aria-hidden="true" />
-          Golden Cinema
+          BlockBuster
         </h4>
       </Link>
       <button

@@ -1,7 +1,8 @@
 import React from 'react';
 import HeroImage from '../assets/shawshank-home-hero-1600x1000.jpg';
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = props => {
   return (
     <div id="home-main" className="container">
       <div className="row container-body my-5 pt-xs-3 pt-sm-4 pb-sm-4 p-sm-3 animated fadeIn">

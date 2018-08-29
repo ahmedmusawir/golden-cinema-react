@@ -21,7 +21,7 @@ export class SearchFrom extends Component {
                 type="search"
                 onChange={this.onSearchChange}
                 name="search"
-                placeholder="Search A Movie ..."
+                placeholder="Find Your Movie ..."
                 ref={input => (this.query = input)}
               />
             </div>

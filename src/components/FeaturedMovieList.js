@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeaturedMovieList = props => {
   return (
@@ -13,12 +14,16 @@ const FeaturedMovieList = props => {
           <h5 className="badge badge-primary">{props.runtime}</h5>
           <p className="plot">{props.plot}</p>
           <div className="btn-holder">
-            <a className="btn btn-warning float-left" href="#">
-              {props.imdbRating}
-            </a>
-            <a className="btn btn-danger float-right" href="#">
+            <a className="btn btn-warning float-left">{props.imdbRating}</a>
+            <Link
+              className="btn btn-danger float-right"
+              to={{
+                pathname: '/buy-now',
+                state: { movie: props.title, poster: props.image }
+              }}
+            >
               Buy Now
-            </a>
+            </Link>
           </div>
         </div>
       </article>

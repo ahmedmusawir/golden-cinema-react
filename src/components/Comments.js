@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
+import Comment from './Comment';
 
 export class Comments extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row container-body my-5 p-5 animated fadeIn">
-          <h1>Comments Page</h1>
-          <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-            pariatur sequi sint aliquam ipsam neque unde dignissimos
-            perferendis, eveniet cupiditate! Aliquid eligendi quasi id
-            consequuntur. Culpa ad aliquam esse sunt.
-          </h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nisi
-            cum minus dolorum illum? Voluptates illo ullam, alias eveniet sit
-            eligendi excepturi debitis eos porro maiores. Autem dolorum amet
-            praesentium. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Est illum sed repudiandae laborum fuga quidem totam libero
-            vitae, deserunt adipisci iste inventore alias aliquid voluptas
-            tempora temporibus iusto minima itaque.
-          </p>
+        <div className="container-body my-5 p-5">
+          <h2 className="text-center">Comments Area</h2>
+          <Comment />
         </div>
         {/* end row */}
       </div>
