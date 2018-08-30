@@ -6,65 +6,69 @@ export class Blog extends Component {
       <div className="blog-page">
         <div className="container-body my-5 p-5 animated fadeIn">
           <h2 className="text-center">Our Blog</h2>
-          <div class="container">
-            <div class="row">
-              <h5 class="text-uppercase font-weight-bold title mx-auto">
-                Pinterest Style Layout with Bootstrap 4
+          <div className="container">
+            <div className="row">
+              <h5 className="text-uppercase font-weight-bold title col-12 text-center">
+                Pinterest Style Layout with Bootstrap 4.
               </h5>
+              <p className="col-12 text-center">
+                * This is strictly cosmetic at this point. Blogging
+                functionality will be added later.
+              </p>
             </div>
-            <div class="row">
-              <div class="card-columns">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-9 col-xs-9">
-                        <h4 class="card-title">BlockBuster Movies</h4>
+            <div className="row">
+              <div className="card-columns">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="row">
+                      <div className="col-sm-9 col-xs-9">
+                        <h4 className="card-title">BlockBuster Movies</h4>
                       </div>
-                      <div class="col-sm-3 col-xs-3">
+                      <div className="col-sm-3 col-xs-3">
                         <img
-                          class="img-fluid logo"
+                          className="img-fluid logo"
                           src="http://placehold.it/50x50?text=LOGO"
                         />
                       </div>
-                      <div class="col-sm-12">
-                        <small class="text-muted">
+                      <div className="col-sm-12">
+                        <small className="text-muted">
                           <a href="#!">
                             <strong>landscaping.com</strong>
                           </a>
                         </small>
                       </div>
                     </div>
-                    <p class="card-text text-dark">
+                    <p className="card-text text-dark">
                       Elementum augue. Sed penatibus dapibus dignissim! Turpis
                       vut, ut placerat. Parturient! Enim elementum eros pulvinar
                       sit egestas, cras vel odio est adipiscing turpis ridiculus
                       adipiscing magna mattis? Vut integer elit! Nunc quis,
                       augue nec turpis nisi penatibus sociis? Natoque sed.
                     </p>
-                    <p class="card-text text-right">
-                      <small class="text-muted">
-                        <span class="social">
+                    <p className="card-text text-right">
+                      <small className="text-muted">
+                        <span className="social">
                           <a href="#!">
                             <i
-                              class="fa fa-facebook-official fa-2x"
+                              className="fa fa-facebook-official fa-2x"
                               aria-hidden="true"
                             />
                           </a>
                           <a href="#!">
                             <i
-                              class="fa fa-twitter-square fa-2x"
+                              className="fa fa-twitter-square fa-2x"
                               aria-hidden="true"
                             />
                           </a>
                           <a href="#!">
                             <i
-                              class="fa fa-pinterest-square fa-2x"
+                              className="fa fa-pinterest-square fa-2x"
                               aria-hidden="true"
                             />
                           </a>
                           <a href="#!">
                             <i
-                              class="fa fa-instagram fa-2x"
+                              className="fa fa-instagram fa-2x"
                               aria-hidden="true"
                             />
                           </a>
@@ -73,23 +77,23 @@ export class Blog extends Component {
                     </p>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://www.hgtv.com/content/dam/images/diy/video/0/01/016/0167/0167023.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -97,23 +101,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://robsonlandscapingandturf.com/wp-content/themes/land3/images/sliders/slide3.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -121,23 +125,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://www.bloomerslandscaping.net/images/background/bg01.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -145,23 +149,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/dc/d2/e6/dcd2e600de02811e154a352d52cfc4c3--curb-appeal-landscaping-landscaping-design.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -169,23 +173,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://www.oclandscaping.net/wp-content/uploads/2012/10/4.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -193,23 +197,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/originals/91/71/de/9171de0fb6f12af8b4390bf382d6bac9.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -217,23 +221,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/75/56/46/755646747ebf14adf7cfe2eec5872317.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -241,23 +245,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/92/44/5c/92445c0db00fb588f7317b9c0669ef79--ideas-for-landscaping-backyards-backyard-landscape-designs.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -265,23 +269,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://jimesperlandscaping.com/wp-content/uploads/2013/05/image9.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -289,23 +293,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/7e/31/62/7e3162429d03990608bb5cc743e649e4--ranch-house-landscaping-landscaping-ideas-for-backyard.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -313,23 +317,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/originals/71/7a/e8/717ae8bf9f3ebbb7be435aaffd2ecd0f.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -337,23 +341,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://www.cabbylandscaping.com/images/background/bg05.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -361,23 +365,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/1e/60/aa/1e60aa04beed942d94604c71302a5065.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -385,23 +389,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/5c/cd/84/5ccd8495371943f1f6a1f31fc85be23e--landscaping-around-trees-backyard-landscaping-ideas-large.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -409,23 +413,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://spectrumlandscapingmn.com/wp-content/uploads/2012/10/spectrum-landscaping2.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -433,23 +437,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="https://i.pinimg.com/736x/54/57/0d/54570de843cad68b85a81865d35d119b--cheap-landscaping-ideas-backyard-ideas.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/320/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More
@@ -457,23 +461,23 @@ export class Blog extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card card-pin">
+                <div className="card card-pin">
                   <img
-                    class="card-img"
+                    className="card-img"
                     src="http://www.branumlandscaping.net/images/indexmain.jpg"
                     alt="Card image"
                   />
-                  <div class="overlay">
-                    <h3 class="card-title title">Some Title</h3>
-                    <div class="download">
+                  <div className="overlay">
+                    <h3 className="card-title title">BlockBuster Cinema</h3>
+                    <div className="download">
                       <a href="http://lorempixel.com/486/322/" download>
-                        <i class="fa fa-download" aria-hidden="true" />
+                        <i className="fa fa-download" aria-hidden="true" />
                       </a>
                     </div>
-                    <div class="more">
+                    <div className="more">
                       <a href="#!">
                         <i
-                          class="fa fa-arrow-circle-o-right"
+                          className="fa fa-arrow-circle-o-right"
                           aria-hidden="true"
                         />{' '}
                         More

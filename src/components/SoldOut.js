@@ -1,13 +1,13 @@
 import React from 'react';
 
-const BuySuccess = () => {
+const SoldOut = () => {
   return (
     <div className="container text-center">
       <div className="row container-body my-5 p-5 animated fadeIn">
-        <h1 className="text-warning mx-auto col-12">Success! </h1>
+        <h1 className="text-danger mx-auto col-12">Sorry! </h1>
         <h4 className="col-12 mx-auto">
-          Your product will be shipped within 24 hrs. Thank you for your
-          business!
+          This product is sold out at the moment. Please check back with us in a
+          week. Thank you for you patience.
         </h4>
       </div>
       {/* end row */}
@@ -16,4 +16,4 @@ const BuySuccess = () => {
   );
 };
 
-export default BuySuccess;
+export default SoldOut;

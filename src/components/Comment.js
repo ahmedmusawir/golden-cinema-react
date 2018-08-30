@@ -45,7 +45,10 @@ class Comment extends Component {
 
   render() {
     let tasks = this.state.todos.map((todo, i) => (
-      <li className="list-group-item animated bounceInLeft text-dark" key={i}>
+      <li
+        className="list-group-item animated bounceInLeft text-dark mb-2"
+        key={i}
+      >
         {todo.name}
 
         <button
@@ -62,18 +65,11 @@ class Comment extends Component {
           ref="todoItem"
           className="form-control"
           type="text"
-          placeholder="Please Leave A Comment ... "
+          placeholder="Please Leave A Comment and Press Enter ... "
           value={this.state.newName}
           onKeyDown={this.handleChange.bind(this)}
         />
-        {/* <input
-          ref="todoItem"
-          className="form-control"
-          type="text"
-          placeholder="What needs to be done on this Project? "
-          value={this.state.newName}
-          onKeyDown={this.handleChange.bind(this)}
-        /> */}
+
         <ul className="list-group">{tasks}</ul>
       </div>
     );

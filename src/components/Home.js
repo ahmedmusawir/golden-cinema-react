@@ -46,9 +46,9 @@ const Home = props => {
               amet praesentium. Lorem ipsum dolor sit amet consectetur
             </p>
             <p>
-              <a className="btn btn-danger float-right" href="#">
+              <Link className="btn btn-danger float-right" to="/sold-out">
                 BUY NOW
-              </a>
+              </Link>
             </p>
           </article>
         </div>

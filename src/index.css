@@ -6743,8 +6743,12 @@ dir {
 
 .blog-page {
   /* Tool Colors */ }
-  .blog-page .container {
-    width: 98%; }
+  @media (max-width: 700px) {
+    .blog-page .container .card-columns {
+      column-count: 1 !important; }
+    .blog-page .container .card.card-pin {
+      width: 100% !important;
+      display: block !important; } }
   .blog-page .logo {
     border-radius: 50%; }
   .blog-page .text-muted a {

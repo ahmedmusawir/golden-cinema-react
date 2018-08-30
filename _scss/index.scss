@@ -263,7 +263,17 @@ dir {
 
 .blog-page {
   .container {
-    width: 98%;
+    // width: 98%;
+    @media (max-width: 700px) {
+      .card-columns {
+        // border: 1rem solid red;
+        column-count: 1 !important;
+      }
+      .card.card-pin {
+        width: 100% !important;
+        display: block !important;
+      }
+    }
   }
 
   .logo {
